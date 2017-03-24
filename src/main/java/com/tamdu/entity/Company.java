@@ -6,7 +6,9 @@ import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Size;
+import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -34,6 +36,9 @@ public class Company {
 
     @Column
     private String email;
+
+    @OneToMany
+    private Set<Offer> offers;
 
     public Company() {
         this.id = UUID.randomUUID().toString();
