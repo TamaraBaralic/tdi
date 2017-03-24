@@ -21,7 +21,6 @@ public class DashboardController {
 
     @RequestMapping("/getAllCompanies")
     public Collection<Company> getAllCompanies() {
-
         return null;
     }
 }
