@@ -14,9 +14,6 @@ public class Offer {
     private String id;
 
     @Column
-    private String company_id;
-
-    @Column
     @Size(max = 40)
     private String name;
 
