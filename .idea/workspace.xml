@@ -97,11 +97,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -557,6 +555,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tamdu/entity/Offer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tamdu/entity/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tamdu/repository/CompanyRepository.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java" />
       </list>
     </option>
@@ -1234,7 +1233,7 @@
       <updated>1490351275019</updated>
       <workItem from="1490351282261" duration="563000" />
       <workItem from="1490351879787" duration="1773000" />
-      <workItem from="1490353938514" duration="5048000" />
+      <workItem from="1490353938514" duration="5421000" />
     </task>
     <task id="LOCAL-00001" summary="creating packages">
       <created>1490357657737</created>
@@ -1292,11 +1291,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490361984752</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="creating repos and service">
+      <created>1490362476092</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1490362476092</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7384000" />
+    <option name="totallyTimeSpent" value="7757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1427" y="24" width="1859" height="1056" extended-state="6" />
@@ -1437,14 +1443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/service/CompanyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1483,14 +1481,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
           </folding>
         </state>
       </provider>
