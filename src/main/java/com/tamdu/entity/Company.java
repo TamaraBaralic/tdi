@@ -5,7 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 import java.util.Set;
 import java.util.UUID;
 
@@ -17,21 +19,24 @@ import java.util.UUID;
 @AllArgsConstructor
 @Data
 @Table(name = "company")
-public class Company {
+public class Company implements Serializable{
 
     @Id
     private String id;
 
+    @NotNull
     @Column
     @Size(max = 40)
     private String name;
 
+    @NotNull
     @Column
     @Size(max = 60)
     private String address;
 
     @Column
-    private int telephone;
+    @Size(max = 20)
+    private String telephone;
 
     @Column
     private String email;
