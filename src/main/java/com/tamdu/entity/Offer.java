@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -31,6 +32,9 @@ public class Offer {
     @ManyToOne
     @JoinColumn(name = "company_id")
     private Company company;
+
+    @ManyToMany(mappedBy = "offers")
+    private Set<User> users;
 
     public Offer() {
         this.id = UUID.randomUUID().toString();
