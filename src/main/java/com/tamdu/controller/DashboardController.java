@@ -4,6 +4,7 @@ import com.tamdu.entity.Company;
 import com.tamdu.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
@@ -13,14 +14,13 @@ import java.util.Collection;
  */
 
 @RestController
-@RequestMapping("/")
 public class DashboardController {
 
     @Autowired
     private CompanyService companyService;
 
-    @RequestMapping("/getAllCompanies")
+    @RequestMapping(value = "/companies", method = RequestMethod.GET)
     public Collection<Company> getAllCompanies() {
-        return null;
+        return companyService.getAllCompanies();
     }
 }

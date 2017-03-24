@@ -1,12 +1,10 @@
 package com.tamdu.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.util.Set;
 import java.util.UUID;
@@ -18,6 +16,7 @@ import java.util.UUID;
 @Entity
 @AllArgsConstructor
 @Data
+@Table(name = "company")
 public class Company {
 
     @Id
@@ -37,7 +36,8 @@ public class Company {
     @Column
     private String email;
 
-    @OneToMany
+    @JsonIgnore
+    @OneToMany(mappedBy = "company")
     private Set<Offer> offers;
 
     public Company() {
