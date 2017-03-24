@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91c7aaf0-e21b-4ce2-95cc-bc94f125ed38" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tamdu/entity/Company.java" afterPath="$PROJECT_DIR$/src/main/java/com/tamdu/entity/Company.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tamdu/repository/CompanyRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/tamdu/repository/CompanyRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -82,13 +81,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompanyRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CompanyRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/repository/CompanyRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="85" lean-forward="false" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -544,6 +557,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tamdu/entity/Offer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tamdu/entity/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tamdu/repository/CompanyRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java" />
       </list>
     </option>
   </component>
@@ -1220,7 +1234,7 @@
       <updated>1490351275019</updated>
       <workItem from="1490351282261" duration="563000" />
       <workItem from="1490351879787" duration="1773000" />
-      <workItem from="1490353938514" duration="4562000" />
+      <workItem from="1490353938514" duration="5048000" />
     </task>
     <task id="LOCAL-00001" summary="creating packages">
       <created>1490357657737</created>
@@ -1271,11 +1285,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490360535157</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="creating repos and service">
+      <created>1490361984752</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490361984752</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6898000" />
+    <option name="totallyTimeSpent" value="7384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1427" y="24" width="1859" height="1056" extended-state="6" />
@@ -1432,14 +1453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/entity/Offer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1466,6 +1479,18 @@
           <caret line="8" column="85" lean-forward="false" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
           </folding>
         </state>
       </provider>
