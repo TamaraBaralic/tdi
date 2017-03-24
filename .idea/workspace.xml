@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c7aaf0-e21b-4ce2-95cc-bc94f125ed38" name="Default" comment="new commit">
+    <list default="true" id="91c7aaf0-e21b-4ce2-95cc-bc94f125ed38" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -96,10 +95,11 @@
       <file leaf-file-name="DashboardController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1033,7 +1033,7 @@
       <updated>1490351275019</updated>
       <workItem from="1490351282261" duration="563000" />
       <workItem from="1490351879787" duration="1773000" />
-      <workItem from="1490353938514" duration="6284000" />
+      <workItem from="1490353938514" duration="6418000" />
     </task>
     <task id="LOCAL-00001" summary="creating packages">
       <created>1490357657737</created>
@@ -1147,11 +1147,25 @@
       <option name="project" value="LOCAL" />
       <updated>1490363524323</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="new commit">
+      <created>1490363709883</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1490363709883</updated>
+    </task>
+    <task id="LOCAL-00018" summary="new commit 2">
+      <created>1490363754356</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1490363754356</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8620000" />
+    <option name="totallyTimeSpent" value="8754000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1427" y="24" width="1859" height="1056" extended-state="6" />
@@ -1243,9 +1257,9 @@
     <MESSAGE value="new commit 4" />
     <MESSAGE value="new commit 5" />
     <MESSAGE value="creating repos and service" />
-    <MESSAGE value="new commit 2" />
     <MESSAGE value="new commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="new commit" />
+    <MESSAGE value="new commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commit 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1340,10 +1354,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tamdu/controller/DashboardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
           </folding>
         </state>
       </provider>
