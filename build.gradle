@@ -34,5 +34,6 @@ dependencies {
 	runtime('mysql:mysql-connector-java')
 	runtime('com.microsoft.sqlserver:mssql-jdbc')
 	compileOnly('org.projectlombok:lombok')
+	compile group: 'nekohtml', name: 'nekohtml', version: '1.9.6.2'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
