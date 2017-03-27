@@ -23,7 +23,7 @@ public class Offer {
 
     @Column
     @Size(max = 40)
-    private String name;
+    private String title;
 
     @Column
     @Size(max = 50)

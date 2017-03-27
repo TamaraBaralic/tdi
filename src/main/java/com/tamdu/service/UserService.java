@@ -18,4 +18,8 @@ public class UserService {
     UserRepository userRepository;
 
     public ArrayList<User> getAllUsers() { return (ArrayList<User>) userRepository.findAll(); }
+
+    public User save(User user){
+       return userRepository.save(user);
+    }
 }

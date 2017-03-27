@@ -8,20 +8,17 @@ import javax.validation.constraints.Size;
 import java.util.Set;
 import java.util.UUID;
 
-@AllArgsConstructor
-@Data
 @Entity
 @Table(name = "user")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
 
-    @Column
+    @Column(name = "name")
     @Size(max = 40)
     private String name;
 
-    @Column
+    @Column(name = "password")
     @Size(max = 30)
     private String password;
 
@@ -32,7 +29,32 @@ public class User {
     private Set<Offer> offers;
 
     public User(){
-        this.id = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString().substring(0, 32);
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public User(String name, String password){
+        this();
+        this.name = name;
+        this.password = password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
