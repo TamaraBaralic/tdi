@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Created by dusica on 24.3.17..
@@ -45,8 +44,15 @@ public class CompanyController {
         companyService.insertCompany(c);
     }
 
-    @RequestMapping(value = "/company/{id}", method = RequestMethod.GET)
-    public List<Offer> getOffers(@PathVariable("id") String id) {
-        return offerService.getOffersForCompany(id);
+    @RequestMapping(value = "/company/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public Collection<Offer> getOffers(@PathVariable("id") String id) {
+
+        id = id.substring(3);
+        Collection<Offer> nesto = offerService.getOffersForCompany(id);
+
+        System.out.println(nesto);
+
+        return nesto;
+
     }
 }
