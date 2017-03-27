@@ -37,6 +37,6 @@ public class Offer {
     private Set<User> users;
 
     public Offer() {
-        this.id = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString().substring(0, 32);
     }
 }

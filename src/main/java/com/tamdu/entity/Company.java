@@ -46,7 +46,7 @@ public class Company implements Serializable{
     private Set<Offer> offers;
 
     public Company() {
-        this.id = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString().substring(0, 32);
     }
 
 }
