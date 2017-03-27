@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Set;
 
-/**
+/**add html5 support thymleaf
  * Created by tamara on 24.3.17..
  */
 @RestController
@@ -28,12 +28,16 @@ public class UserController {
 
     @RequestMapping(value = "/save", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public User saveUser(String username, String password){
-        User user = new User();
-        user.setName(username);
-        user.setPassword(password);
+        User user = userService.findUserByName(username);
+        if(user == null) {
+            User newUser = new User();
+            newUser.setName(username);
+            newUser.setPassword(password);
+            userService.save(newUser);
 
-        userService.save(user);
-
-        return user;
+            return newUser;
+        }
+        else
+            return user;
     }
 }

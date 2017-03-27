@@ -10,4 +10,5 @@ import java.util.Set;
  */
 public interface UserRepository extends PagingAndSortingRepository<User, String> {
 
+    public User findByName(String name);
 }
