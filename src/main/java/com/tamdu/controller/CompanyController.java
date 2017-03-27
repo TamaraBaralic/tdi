@@ -31,6 +31,12 @@ public class CompanyController {
 
         System.out.println(name + " " + address + " " + telephone + " " + email);
         Company c = new Company();
+        c.setName(name);
+        c.setAddress(address);
+        c.setTelephone(telephone);
+        c.setEmail(email);
+        System.out.println(c.toString());
+        companyService.insertCompany(c);
     }
 
 }

@@ -18,6 +18,9 @@ var company = {
         var data = new FormData();
 
         data.append('name', $('#companyName').val());
+        data.append('address', $('#companyAddress').val());
+        data.append('telephone', $('#companyTel').val());
+        data.append('email', $('#companyMail').val());
 
         $.ajax({
             type : 'POST',

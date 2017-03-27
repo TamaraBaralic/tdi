@@ -21,13 +21,7 @@ public class CompanyService {
         return (Collection<Company>) companyRepository.findAll();
     }
 
-//    public void insertCompany(Company company) {
-//        Company c = new Company();
-//        c.setId(company.getId());
-//        c.setName(company.getName());
-//        c.setAddress(company.getAddress());
-//        c.setEmail(company.getEmail());
-//        c.setTelephone(company.getTelephone());
-//        companyRepository.save(c);
-//    }
+    public void insertCompany(Company company) {
+        companyRepository.save(company);
+    }
 }
