@@ -24,4 +24,6 @@ public class DashboardController {
     @RequestMapping("/users")
     public String createUser(){ return "user"; }
 
+    @RequestMapping("/offers/allOffers")
+    public String offersList(){ return "offers"; }
 }
