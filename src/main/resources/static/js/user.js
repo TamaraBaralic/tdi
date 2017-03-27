@@ -27,7 +27,7 @@ var user = {
             contentType : false,
             processData : false,
             success : function (data) {
-                location.href = "http://localhost:8080/";
+                location.href = "http://localhost:8080/offers/allOffers";
             },
             error : function ()
                 { console.log("error"); }
