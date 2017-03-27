@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by tamara on 27.3.17..
@@ -17,6 +18,11 @@ public class OfferService {
     OfferRepository offerRepository;
 
     public ArrayList<Offer> getAllOffers(){
-        return offerRepository.findAll();
+        return (ArrayList<Offer>) offerRepository.findAll();
     }
+
+    public List<Offer> getOffersForCompany(String id) {
+        return offerRepository.findByCompanyId(id);
+    }
+
 }
