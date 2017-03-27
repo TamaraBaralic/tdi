@@ -15,4 +15,9 @@ public class DashboardController {
         return "index";
     }
 
+    @RequestMapping("/companies")
+    public String company() {
+        return "company";
+    }
+
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Company</title>
+</head>
+<body>
+
+    <div>
+        <label>Company name</label>
+        <input type="text" id="companyName"/>
+        <br/>
+        <label>Company address</label>
+        <input type="text" id="companyAddress"/>
+        <br/>
+        <label>Company telephone</label>
+        <input type="text" id="companyTel"/>
+        <br/>
+        <label>Company email</label>
+        <input type="text" id="companyMail"/>
+        <br/>
+        <button type="button" id="submitButton">Create company</button>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/company.js}"></script>
+
+
+</body>
+</html>
