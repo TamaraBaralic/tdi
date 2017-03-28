@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by dusica on 24.3.17..
@@ -45,14 +47,17 @@ public class CompanyController {
     }
 
     @RequestMapping(value = "/company/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public Collection<Offer> getOffers(@PathVariable("id") String id) {
+    public List<String[]> getOffers(@PathVariable("id") String id) {
 
         id = id.substring(3);
-        Collection<Offer> nesto = offerService.getOffersForCompany(id);
+        List<Offer> nesto = offerService.getOffersForCompany(id);
+        List<String[]> offersList = new ArrayList<>();
 
-        System.out.println(nesto);
+        for(int i = 0; i < nesto.size(); i++) {
+            String[] arr = {nesto.get(i).getTitle(), nesto.get(i).getDescription(), nesto.get(i).getCompany().getName()};
+            offersList.add(arr);
+        }
 
-        return nesto;
-
+        return offersList;
     }
 }

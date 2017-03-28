@@ -19,7 +19,7 @@ import java.util.Set;
 public class Role {
 
     @Id
-    private int id;
+    private Integer id;
 
     @Column(name = "name")
     @Size(max = 40)
@@ -28,4 +28,8 @@ public class Role {
     @OneToMany(mappedBy = "role", fetch = FetchType.LAZY)
     private Set<User> users;
 
+    public Role(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

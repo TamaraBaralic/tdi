@@ -18,6 +18,4 @@ public interface OfferRepository extends PagingAndSortingRepository<Offer, Strin
     @Query("select o from Offer o where o.company.id = :company_id")
     List<Offer> findByCompanyId(@Param("company_id") String company_id);
 
-
-
 }

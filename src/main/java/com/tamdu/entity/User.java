@@ -25,7 +25,7 @@ public class User {
     private String name;
 
     @Column(name = "password")
-    @Size(max = 30)
+    @Size(max = 60)
     private String password;
 
     @ManyToOne
