@@ -3,6 +3,8 @@ package com.tamdu.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -18,6 +20,8 @@ import java.util.UUID;
 @Entity
 @AllArgsConstructor
 @Data
+@EqualsAndHashCode(exclude = "offers")
+@ToString(exclude = "offers")
 @Table(name = "company")
 public class Company implements Serializable{
 

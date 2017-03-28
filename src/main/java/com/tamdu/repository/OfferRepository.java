@@ -1,7 +1,9 @@
 package com.tamdu.repository;
 
 import com.tamdu.entity.Offer;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,9 @@ public interface OfferRepository extends PagingAndSortingRepository<Offer, Strin
 
     ArrayList<Offer> findAll();
 
-    List<Offer> findByCompanyId(String company_id);
+    @Query("select o from Offer o where o.company.id = :company_id")
+    List<Offer> findByCompanyId(@Param("company_id") String company_id);
+
+
 
 }
