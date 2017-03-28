@@ -2,12 +2,18 @@ package com.tamdu.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.util.Set;
 import java.util.UUID;
 
+@AllArgsConstructor
+@Data
+@EqualsAndHashCode(exclude = "offers")
+@ToString(exclude = "offers")
 @Entity
 @Table(name = "user")
 public class User {
@@ -22,6 +28,10 @@ public class User {
     @Size(max = 30)
     private String password;
 
+    @Column(name="role")
+    @Size(max = 40)
+    private String role;
+
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name="user_offer", joinColumns = {
             @JoinColumn(name="user_id", nullable = false, updatable = false)
@@ -32,29 +42,5 @@ public class User {
         this.id = UUID.randomUUID().toString().substring(0, 32);
     }
 
-    public String getId() {
-        return id;
-    }
 
-    public User(String name, String password){
-        this();
-        this.name = name;
-        this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
