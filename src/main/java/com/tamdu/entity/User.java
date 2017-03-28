@@ -28,9 +28,9 @@ public class User {
     @Size(max = 30)
     private String password;
 
-    @Column(name="role")
-    @Size(max = 40)
-    private String role;
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name="user_offer", joinColumns = {
