@@ -1,4 +1,4 @@
-package com.tamdu;
+package com.tamdu.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -34,6 +34,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
+                .defaultSuccessUrl("/companies")
                 .loginPage("/login")
                 .permitAll()
                 .and()

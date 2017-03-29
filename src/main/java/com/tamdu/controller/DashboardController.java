@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class DashboardController {
 
-    @RequestMapping("/")
-    public String index() {
-        return "index";
-    }
+//    @RequestMapping("/")
+//    public String index() {
+//        return "index";
+//    }
 
     @RequestMapping("/companies")
     public String company() {
@@ -40,4 +40,9 @@ public class DashboardController {
 
         return "login";
     }
+
+//    @RequestMapping(value = {"/"}, method = RequestMethod.GET)
+//    public String welcome(Model model) {
+//        return "company";
+//    }
 }
