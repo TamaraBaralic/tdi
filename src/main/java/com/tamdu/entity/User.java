@@ -43,5 +43,4 @@ public class User {
         this.id = UUID.randomUUID().toString().substring(0, 32);
     }
 
-
 }
