@@ -19,7 +19,7 @@ public class OfferController {
     @Autowired
     OfferService offerService;
 
-    @RequestMapping("/getAllOffers")
+    @RequestMapping("/allOffers")
     public final ArrayList<Offer> getAllOffers(){
         return offerService.getAllOffers();
     }
