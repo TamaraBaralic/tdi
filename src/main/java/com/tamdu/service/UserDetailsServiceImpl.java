@@ -29,11 +29,15 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         User user = userRepository.findByName(username);
 
-        Set<GrantedAuthority> grantedAuthorties = new HashSet<>();
+        if(user == null) {
+            throw new UsernameNotFoundException("No user present with username: " + username);
+        }
+        else {
+            Set<GrantedAuthority> grantedAuthorties = new HashSet<>();
 
-        grantedAuthorties.add(new SimpleGrantedAuthority(user.getRole().getName()));
+            grantedAuthorties.add(new SimpleGrantedAuthority(user.getRole().getName()));
 
-        return new org.springframework.security.core.userdetails.User(user.getName(), user.getPassword(), grantedAuthorties);
-
+            return new org.springframework.security.core.userdetails.User(user.getName(), user.getPassword(), grantedAuthorties);
+        }
     }
 }
