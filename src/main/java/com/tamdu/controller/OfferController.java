@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * Created by tamara on 27.3.17..
  */
-@Controller
+@RestController
 @RequestMapping("/offers")
 public class OfferController {
 
@@ -22,16 +22,8 @@ public class OfferController {
     OfferService offerService;
 
     @RequestMapping("/allOffers")
-    @ResponseBody
     public final ArrayList<Offer> getAllOffers(){
         return offerService.getAllOffers();
     }
-
-    @RequestMapping("/{id}")
-    @ResponseBody
-    public Offer getOfferById(@PathVariable String id) { return offerService.getOfferById(id); }
-
-    @RequestMapping("/getOfferById/{id}")
-    public String offerById(@PathVariable String id) { return "offer"; }
 
 }
