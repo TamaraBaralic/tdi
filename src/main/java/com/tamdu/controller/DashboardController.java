@@ -25,7 +25,7 @@ public class DashboardController {
     public String createUser(){ return "user"; }
 
     @RequestMapping("/offers")
-    public String offersList(){ return "offers"; }
+    public String offers(){ return "offers"; }
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) {
