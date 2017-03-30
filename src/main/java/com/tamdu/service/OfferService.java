@@ -25,4 +25,6 @@ public class OfferService {
         return offerRepository.findByCompanyId(id);
     }
 
+    public Offer getOfferById(String id) { return offerRepository.findOne(id); }
+
 }
