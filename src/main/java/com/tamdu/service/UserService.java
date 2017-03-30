@@ -29,7 +29,6 @@ public class UserService {
 
     public User save(User user){
 
-        System.out.println(user);
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         user.setRole(new Role(1, "admin"));
         return userRepository.save(user);
