@@ -5,7 +5,7 @@ var user = {
     fillTable : function () {
 
         $.ajax({
-            url : '/offers/getAllOffers',
+            url : '/offers/allOffers',
             contentType: false,
             processData: false,
             success : function (dat) {
