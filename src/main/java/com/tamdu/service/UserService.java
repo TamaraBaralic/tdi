@@ -27,10 +27,10 @@ public class UserService {
 
     public ArrayList<User> getAllUsers() { return (ArrayList<User>) userRepository.findAll(); }
 
-    public User save(User user){
+    public User save(User user) {
 
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        user.setRole(new Role(1, "admin"));
+        user.setRole(new Role(2, "user"));
         return userRepository.save(user);
     }
 
